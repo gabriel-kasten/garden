@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <title>Document</title>
+</head>
+
+<style>
+    :root {
+        --vertical-general-margin: 16rem;
+
+        /* colors */
+        --primary: #030712;
+        --primary-variant: #707172;
+        --secondary: #f8fafc;
+
+        --bg-color: #161616;
+    }
+
+    body {
+        background-color: var(--bg-color);
+        color: var(--secondary);
+
+        margin: var(--vertical-general-margin) 0px;
+        padding: 0;
+        overflow-x: hidden;
+
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+
+        position: relative;
+        right: 20rem;
+    }
+
+    .blog-links-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .blog-page-link {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    h1 {
+        font-weight: 400;
+    }
+
+    a {
+        color: var(--secondary);
+    }
+
+    .blog-page-link span {
+        color: var(--primary-variant);
+    }
+
+    footer {
+        position: fixed;
+        top: 90%;
+
+
+        gap: 1rem;
+    }
+
+    footer span {
+        border: 1px solid var(--primary-variant);
+        padding: 6px 12px;
+        border-radius: 6px;
+    }
+</style>
+
+<body>
+    <main>
+        <h1>Garden</h1>
+
+        <div class="blog-links-container">
+            <div class="blog-page-link">
+                <div class="date-container"><span id="year">2024</span> <span>•</span> <span id="month">02</span></div>
+                <a href="#">Arch Personal Setup</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <span .command><i class="ph ph-command"></i> F</span> for search
+    </footer>
+</body>
+
+</html>
